@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Form & Frame</title>
+</head>
+<body>
+  <h2>Gabungan</h2>
+
+  <!-- Radio Button -->
+  <p>Pilih Provinsi:</p>
+  <input type="radio" name="jk" value="Kalimantan"> Kalimantan
+  <input type="radio" name="jk" value="sulawesi selatan"> Sulawesi selatan
+  <br><br>
+
+  <!-- Dropdown -->
+  <p>Pilih Universitas Sulsel:</p>
+  <select name="Universitas SUlsel">
+    <option>Sultan Hasanuddin</option>
+    <option>Universitas Makassar</option>
+    <option>Universitas Muhammadiyyah Makassar</option>
+    <option>Universitas Alauddin Makassar</option>
+  </select>
+  <br><br>
+
+  <!-- Text Area -->
+  <p>Alamat:</p>
+  <textarea rows="4" cols="40"></textarea>
+  <br><br>
+
+  <button type="submit">Kirim</button>
+  <button type="reset">Reset</button>
+
+  <!-- Frame Horisontal -->
+  <h2>Frame Horisontal</h2>
+  <iframe srcdoc="<p style='text-align:center'>Frame Atas</p>" width="100%" height="100" style="border:1px solid black;"></iframe>
+  <iframe srcdoc="<p style='text-align:center'>Frame Bawah</p>" width="100%" height="100" style="border:1px solid black;"></iframe>
+
+  <!-- Frame Vertikal -->
+  <h2>Frame Vertikal</h2>
+  <table width="100%" border="1">
+    <tr>
+      <td><iframe srcdoc='<p style="text-align:center">Frame Kiri</p>' width="100%" height="100"></iframe></td>
+      <td><iframe srcdoc='<p style="text-align:center">Frame Kanan</p>' width="100%" height="100"></iframe></td>
+    </tr>
+  </table>
+
+  <!-- Frame Gabungan H-V -->
+  <h2>Frame Gabungan (Horisontal + Vertikal)</h2>
+  <iframe srcdoc="<p style='text-align:center'>Frame Atas</p>" width="100%" height="80" style="border:1px solid black;"></iframe>
+  <table width="100%" border="1">
+    <tr>
+      <td><iframe srcdoc='<p style="text-align:center">Frame Kiri</p>' width="100%" height="100"></iframe></td>
+      <td><iframe srcdoc='<p style="text-align:center">Frame Tengah</p>' width="100%" height="100"></iframe></td>
+      <td><iframe srcdoc='<p style="text-align:center">Frame Kanan</p>' width="100%" height="100"></iframe></td>
+    </tr>
+  </table>
+</body>
+</html>
