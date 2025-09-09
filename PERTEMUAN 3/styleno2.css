@@ -1,0 +1,50 @@
+/* Warna utama */
+:root {
+  --biru-tua: #0d1b2a;
+  --biru-muda: #00aaff;
+  --putih: #ffffff;
+}
+
+/* Body */
+body {
+  background-color: var(--biru-tua);
+  color: var(--putih);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Judul */
+h2 {
+  color: var(--biru-muda);
+  border-bottom: 2px solid var(--biru-muda);
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* List Makanan */
+ul.makanan {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul.makanan li {
+  background: #1b263b;
+  padding: 8px;
+  margin: 6px 0;
+  border-left: 4px solid var(--biru-muda);
+  border-radius: 5px;
+}
+
+/* List Minuman */
+ol.minuman {
+  padding-left: 20px;
+}
+
+ol.minuman li {
+  background: #1b263b;
+  padding: 8px;
+  margin: 6px 0;
+  border-left: 4px solid var(--biru-muda);
+  border-radius: 5px;
+}
