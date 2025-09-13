@@ -1,0 +1,277 @@
+/* Warna utama */
+:root {
+  --pink: #ff4fa6;
+  --black: #111;
+  --white: #fff;
+  --muted: #ccc;
+  --beige: #f5f5dc;
+}
+
+/* Reset dan body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("background.jpg") no-repeat center center fixed; /* dari modul: background image */
+  background-size: cover;
+  color: var(--beige);
+  line-height: 1.6;
+}
+
+/* Kontainer resume */
+.resume {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(26, 26, 26, 0.85); /* box transparan */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Header */
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 2px solid var(--pink);
+  padding-bottom: 20px;
+}
+
+.foto-frame {
+  background: #000;
+  padding: 8px;
+  border-radius: 50%;
+  border: 4px solid var(--pink);
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+
+  /* dari modul: transparansi */
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.foto:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Variasi ukuran foto (tugas mandiri modul 4) */
+.foto-3x4 {
+  width: 90px;
+  height: 120px;
+}
+
+.foto-4x6 {
+  width: 120px;
+  height: 180px;
+}
+
+.foto-10x15 {
+  width: 300px;
+  height: 450px;
+}
+
+.nama {
+  margin: 0;
+  font-size: 28px;
+  color: var(--pink);
+}
+
+.tagline {
+  margin: 5px 0;
+  color: var(--beige);
+}
+
+.kontak p {
+  margin: 2px 0;
+}
+
+/* Section Umum */
+section {
+  margin-top: 20px;
+}
+
+h2 {
+  color: var(--pink);
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 4px;
+}
+
+/* Sekilas Tentangku */
+section p {
+  color: var(--beige);
+}
+
+/* Data Diri */
+.data-diri ul {
+  list-style: none;
+  padding: 0;
+}
+
+.data-diri ul li {
+  padding: 6px 0;
+  border-left: 3px solid var(--pink);
+  padding-left: 10px;
+  margin-bottom: 4px;
+}
+
+/* Pendidikan */
+.pendidikan h2 {
+  color: var(--pink);
+  border-bottom: 2px solid var(--pink);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.pendidikan ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.pendidikan ul li {
+  background: #2a2a2a;
+  border: 2px solid var(--pink);
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  color: var(--beige);
+  transition: 0.3s;
+}
+
+.pendidikan ul li:hover {
+  background: var(--pink);
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* Hobi */
+.hobi .daftar-hobi {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.hobi-item {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background: #2a2a2a;
+  border: 2px solid var(--pink);
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--beige);
+  transition: 0.3s;
+}
+
+.hobi-item:hover {
+  background: var(--pink);
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* Media Sosial */
+.sosial a {
+  color: var(--pink);
+  text-decoration: none;
+}
+.sosial a:hover {
+  text-decoration: underline;
+}
+
+/* Link dan email */
+.sosial ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sosial ul li {
+  padding: 4px 0;
+  border-left: 3px solid var(--pink);
+  padding-left: 10px;
+  margin-bottom: 4px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--pink);
+  padding: 10px 0;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  background: var(--black);
+  color: var(--pink);
+}
+
+/* Galeri foto */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.galeri img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid var(--pink);
+  transition: 0.3s;
+}
+.galeri img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Home box */
+.home-box {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.foto-home {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid var(--pink);
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.sapaan {
+  font-size: 32px;
+  color: var(--pink);
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 18px;
+  color: var(--beige);
+}
+

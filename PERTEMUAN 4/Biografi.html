@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web miill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('portofolio')">Portofolio</a></li>
+      <li><a href="#" onclick="showPage('galeri')">Galeri</a></li>
+    </ul>
+  </nav>
+
+<!-- Halaman Home -->
+<div class="page" id="home">
+  <div class="resume home-box">
+    <div class="home-header">
+      <img src="fto5.jpeg" alt="Foto Saya" class="foto-home">
+      <h1 class="sapaan">Hellooowww , Aku Miilaa</h1>
+    </div>
+    <p class="intro">Selamat datang di websitenya Mila ya!</p>
+  </div>
+</div>
+
+
+  <!-- Halaman Portofolio -->
+  <div class="page" id="portofolio" style="display:none;">
+    <div class="resume">
+      <header class="header">
+        <div class="foto-frame">
+          <img src="foto mil.jpeg" alt="Foto Profil" class="foto">
+        </div>
+        <div class="info">
+          <h1 class="nama">Nur Karmila Agustina</h1>
+          <p class="tagline">Halooowwwwww, ini Mila</p>
+          <div class="kontak">
+            <p>📞 0813-4380-5451</p>
+            <p>📧 nurkarmilaagustina07@gmail.com</p>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <h2>🌸Sekilas Tentangku</h2>
+        <p>
+          namaku Nur Karmila Agustina tapi suka dipanggil miill, 
+          aku manusia yang paling excited tantang apapun itu,
+          manusia yang 10% sedihnya,capeknya,dan 90% bahagianya,semangatnya
+        </p>
+      </section>
+
+      <section class="data-diri">
+        <h2>Identitas Diri</h2>
+        <ul>
+          <li>Nama : Nur Karmila Agustina</li>
+          <li>Tanggal Lahir : 18 Mei 2006</li>
+          <li>Umur : 19 tahun</li>
+          <li>Agama : Islam</li>
+          <li>Kewarganegaraan : Indonesia</li>
+        </ul>
+      </section>
+
+      <section class="pendidikan">
+        <h2>Pendidikan</h2>
+        <ul>
+          <li>SD: Buana Indah</li>
+          <li>SMP : Negeri Tomoni Timur</li>
+          <li>SMK : 3 Tarakan</li>
+          <li>Kuliah : Universitas Negeri Makassar</li>
+        </ul>
+      </section>
+
+      <section class="hobi">
+        <h2>Hobi</h2>
+        <div class="daftar-hobi">
+          <div class="hobi-item">📖 Membaca</div>
+          <div class="hobi-item">🏞️ Memotret</div>
+          <div class="hobi-item">🏀 Olahraga</div>
+        </div>
+      </section>
+
+      <section class="sosial">
+        <h2>Media Sosial</h2>
+        <ul>
+          <li>Instagram: <a href="https://www.instagram.com/miillmillll" target="_blank">miillmillll</a></li>
+          <li>WhatsApp: <a href="https://wa.me/qr/081343805451" target="_blank">call me</a></li>
+          <li>Email: nurkarmilaagustina07@gmail.com</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <!-- Halaman Galeri -->
+  <div class="page" id="galeri" style="display:none;">
+    <div class="resume">
+      <h2>Galeri mila</h2>
+      <div class="galeri">
+        <img src="fto 1.jpeg" alt="Sahabat saya">
+        <img src="fto 2.jpeg" alt="Foto kebersamaan saya">
+        <img src="fto 3.jpeg" alt="sekalas saya">
+      </div>
+    </div>
+  </div>
+
+  <!-- Script untuk ganti halaman -->
+  <script>
+    function showPage(pageId) {
+      
+      document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+      document.getElementById(pageId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
