@@ -254,6 +254,7 @@ Kode ini membuat halaman berjudul "Operator ?" yang di dalam body menyisipkan sc
 ![alt text](2.d.png)
 
 4.3 memasukkan data
+
 ![alt text](3.png)
 
 5. 4 jendela peringatan dan konfimasi contoh 1
