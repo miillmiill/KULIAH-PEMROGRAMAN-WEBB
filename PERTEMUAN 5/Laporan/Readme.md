@@ -242,39 +242,50 @@ Kode ini membuat halaman berjudul "Operator ?" yang di dalam body menyisipkan sc
 
 # Output
 1. 2.a menggunakan tag script
+
 ![alt text](2.a.png)
 
 2. 2.c event tertentu
+
 ![alt text](2.c.png)
 
 3. 2.d contoh sederhana
+
 ![alt text](2.d.png)
 
 4.3 memasukkan data
 ![alt text](3.png)
 
 5. 4 jendela peringatan dan konfimasi contoh 1
+
 ![alt text](4.1.png)
 
 6. 4 jendela peringatan dan konfimasi contoh 2
+
 ![alt text](4.2.png)
 
 7. 5.a mendeklarasikan variabel
+
 ![alt text](5.a.png)
 
 8. 5.b global
+
 ![alt text](5.b%20global.png)
 
 9. 5.b local 
+
 ![alt text](5.b%20lokal.png)
 
 10. 7 konversi tipe data
+
 ![alt text](7.png)
 
 11. 8 operator aritmatika
+
 ![alt text](8.png)
 
 12. 9 operator logika dan pembanding
+
 ![alt text](9.png)
 
 
@@ -419,15 +430,19 @@ Hitung Bangun Ruang yang di dalam body menyisipkan script JavaScript untuk mengh
 
 # output
 1. tugas no 1
+
 ![alt text](no1.png)
 
 2. tugas no 2
+
 ![alt text](no2.png)
 
 3. tugas no 3
+
 ![alt text](no3.png)
 
 4. tugas no 4
+
 ![alt text](no4.png)
 
 
