@@ -1,0 +1,131 @@
+/* Latar belakang lembut */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #f1f7ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Kotak utama seperti buku catatan */
+.note-container {
+  background: #ffffff;
+  margin-top: 60px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 85%;
+  max-width: 1000px;
+  border: 1px solid #e6e9f0;
+}
+
+/* Judul halaman */
+h2 {
+  font-size: 26px;
+  color: #444;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Tombol tambah */
+a.tambah {
+  display: inline-block;
+  background-color: #92b4ec;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+a.tambah:hover {
+  background-color: #7aa2e3;
+}
+
+/* Pembungkus tabel agar tidak keluar batas */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Tabel catatan */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fefefe;
+}
+
+th, td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e0e6f2;
+  text-align: left;
+  font-size: 15px;
+}
+
+th {
+  background-color: #c7d9fa;
+  color: #333;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fe;
+}
+
+tr:hover {
+  background-color: #eef4ff;
+  transition: 0.2s;
+}
+
+/* Kolom isi agar terlihat seperti catatan */
+td.isi {
+  font-style: italic;
+  color: #555;
+  white-space: pre-wrap;
+}
+
+/* Tombol edit & hapus */
+.edit, .hapus {
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 0 2px;
+  transition: 0.3s;
+}
+
+.edit {
+  background-color: #8ed1b2;
+  color: #fff;
+}
+
+.edit:hover {
+  background-color: #77c39e;
+}
+
+.hapus {
+  background-color: #f08c8c;
+  color: #fff;
+}
+
+.hapus:hover {
+  background-color: #dc6e6e;
+}
+
+/* Responsif di layar kecil */
+@media (max-width: 700px) {
+  .note-container {
+    padding: 25px;
+  }
+  table, th, td {
+    font-size: 13px;
+  }
+}
