@@ -21,7 +21,7 @@ $row = mysqli_fetch_assoc($data);
     <form method="POST">
         Judul: <br>
         <input type="text" name="judul" value="<?= $row['judul']; ?>" required><br><br>
-        Isi catatan: <br>
+        Isi Catatan: <br>
         <textarea name="isi" rows="5" cols="40" required><?= $row['isi']; ?></textarea><br><br>
         <button type="submit" name="update">Update</button>
     </form>
